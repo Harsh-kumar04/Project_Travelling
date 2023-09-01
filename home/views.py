@@ -4,9 +4,9 @@ from home.models import Contact
 from datetime import datetime
 from django.contrib import messages
 import json
-import requests
 
 def index(requset):
+  
   
 
   return render(requset, 'index.html')
@@ -14,7 +14,10 @@ def index(requset):
     #return HttpResponse(" this is HOME page.")
 
 
-       
+
+def first(requset):
+   
+   return render(requset, 'first.html')       
 
 def about(requset):
    
