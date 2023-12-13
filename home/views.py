@@ -6,9 +6,6 @@ from django.contrib import messages
 import json
 
 def index(requset):
-  
-  
-
   return render(requset, 'index.html')
   
     #return HttpResponse(" this is HOME page.")
@@ -17,7 +14,19 @@ def index(requset):
 
 def first(requset):
    
-   return render(requset, 'first.html')       
+   return render(requset, 'first.html')   
+
+def jorhat(requset):
+   
+   return render(requset, 'jorhat.html')    
+def manikar(requset):
+   
+   return render(requset, 'manikar.html')  
+
+def kasol(requset):
+   
+   return render(requset, 'kasol.html') 
+   
 
 def about(requset):
    

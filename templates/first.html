@@ -1,54 +1,102 @@
 {% extends 'base.html' %}
 
-{% block title %} Punducherry {% endblock title %}
+{% block title %}
+  Punducherry
+{% endblock %}
 
 {% block body %}
-<div class = "container-fluid px-0">
+  <div class="container-fluid px-0">
     <div id="carouselExampleFade" class="carousel slide carousel-fade">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="https://source.unsplash.com/1600x700/?India/mountain" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="https://source.unsplash.com/1600x700/?India" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="https://source.unsplash.com/1600x700/?India,trip" class="d-block w-100" alt="...">
-          </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="https://source.unsplash.com/1600x700/?India/mountain" class="d-block w-100" alt="..." />
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>  
-</div>
-
-<div class="row featurette ">
-  <div class="col-md-7 px-7">
-    <h2 class="featurette-heading fw-normal lh-1 my-5">Punducherry </h2>
-    <p class="lead">The calm and colourful Union Territory of Puducherry lies on India's southern coast. A former French colony, it is known for age-old monuments, majestic churches, exotic beaches, and tree-lined boulevards.</p>
-  </div>
-  <div class="col-md-5">
-    <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto my-5"  width="500" height="500" img src="https://source.unsplash.com/500x500/?India/mountain"  role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-bg)"></rect><text x="50%" y="50%" fill="var(--bs-secondary-color)" dy=".3em" ></text></svg>
-  </div>
-</div>
-
-
-<div class="row featurette">
-      <div class="col-md-7 order-md-2 px-7">
-        <h2 class="featurette-heading fw-normal lh-1 my-5">How to reach? <span class="text-body-secondary"></span></h2>
-        <p class="lead">Pondicherry is best accessible by road, either by bus or by taxi. Private tourist buses ply from Chennai, Madurai and Bengaluru to Pondicherry. Busses also connect Pondicherry to Thanjavur, Trichy, Chidamabaram and Coimbatore.</p>
+        <div class="carousel-item">
+          <img src="https://source.unsplash.com/1600x700/?India" class="d-block w-100" alt="..." />
+        </div>
+        <div class="carousel-item">
+          <img src="https://source.unsplash.com/1600x700/?India,trip" class="d-block w-100" alt="..." />
+        </div>
       </div>
-      <div class="col-md-5 order-md-1">
-        <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-bg)"></rect><text x="50%" y="50%" fill="var(--bs-secondary-color)" dy=".3em">500x500</text></svg>
-      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
+  </div>
 
-<hr class="featurette-divider px-10 my-9">
+  <div class="row featurette">
+    <div class="col-md-7 px-7">
+      <h2 class="featurette-heading fw-normal lh-1 my-5">Punducherry</h2>
+      <p class="lead">
+        <strong>The calm and colourful Union Territory of Puducherry lies on India's southern coast. A former French colony, it is known for age-old monuments, majestic churches, exotic beaches, and tree-lined boulevards.</strong>
 
+        <br /><br />
 
-{% endblock body %}
+        <b>Attractions:</b>
+        <br /> -Promenade Beach<br />
+        -Auroville<br />
+        -Sri Aurobindo Ashram<br />
+        -French Quarter<br />
+        -Paradise Beach<br />
+        -Matrimandir<br />
+        -Botanical Garden<br />
+
+        <br /><br />
+
+        <b>Tips:</b>
+        <br /> ->Visit during October to February<br />
+        ->Respect local customs and traditions<br />
+        ->Wear lightweight clothing and sunscreen<br />
+        ->Use mosquito repellent<br />
+      </p>
+    </div>
+    <style>
+      .frame {
+        width: 500px;
+        height: 500px;
+        border: 3px solid #ccc;
+        background: #eee;
+        margin: auto;
+        padding: 15px 10px;
+      }
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    </style>
+    <div class="frame">
+      <img src="static\img\tim-trad-BYPMtjYMEyk-unsplash.jpg" alt="Nature" aling="right" />
+    </div>
+  </div>
+
+  <div class="row featurette">
+    <div class="col-md-7 order-md-2 px-7">
+      <h2 class="featurette-heading fw-normal lh-1 my-5">How to reach? <span class="text-body-secondary"></span></h2>
+      <p class="lead">
+        Certainly, here's a concise overview of how to reach Puducherry:<br />
+
+        <br />You can reach Puducherry by:<br />
+
+        <b>Air:</b> ,<br /> The nearest major airport is Chennai International Airport. From there, you can take a taxi or bus to Puducherry.<br />
+
+        <b>Train:</b> <br />Puducherry has its own railway station with connections to Chennai, Bangalore, and nearby cities.<br />
+
+        <b>Bus:</b> <br />State-run and private buses connect Puducherry to Chennai, Bangalore, and other towns.<br />
+
+        <b>Road:</b><br /> Puducherry is accessible by car via well-maintained highways.<br />
+
+        Within Puducherry, use local options like auto-rickshaws and taxis for getting around.
+      </p>
+    </div>
+    <div class="frame">
+      <img src="https://source.unsplash.com/1600x700/?travel" alt="Nature" aling="left" />
+    </div>
+  </div>
+
+  <hr class="featurette-divider px-10 my-9" />
+{% endblock %}
